@@ -184,7 +184,6 @@
   * ClusterIP
   * NodePort
   * LoadBalancer
-  * ExternalName
 * Kubernetes Networking Model and Service Discovery
 * Selectors and Endpoints
 
@@ -193,7 +192,7 @@
 * Expose a Deployment using ClusterIP Service
 * Expose application using NodePort Service
 * Access the application from browser/host machine
-* Test load balancing across multiple Pods
+* Test load balancing across multiple Pods (metallb)
 
 ---
 
@@ -204,7 +203,6 @@
 * Namespaces for Resource Isolation and Multi-tenancy
 * Labels and Selectors – Key Concepts
 * Organizing and Querying Resources Using Labels
-* Resource Quotas and Limits (Overview)
 
 ## Hands-on Lab
 
@@ -310,9 +308,8 @@
 
 ## Hands-on Lab
 
-* Install NGINX Ingress Controller in Minikube
+* Install NGINX Ingress Controller in Minikube/k3s
 * Configure Ingress resource for your application
-* Add Liveness and Readiness probes to Deployment
 * Test health check behavior
 
 ---
